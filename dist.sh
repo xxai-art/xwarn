@@ -25,7 +25,7 @@ VERSION=$(grep "^version" Cargo.toml)
 sed -i "s/^version = \"$VERSION\"/version = \"$NEW_VERSION\"/" Cargo.toml
 ./clippy.sh
 git add -u
-git commit -m "v$VERSION"
+git commit -m "$VERSION"
 git pull
 git push
 cargo publish --registry crates-io
