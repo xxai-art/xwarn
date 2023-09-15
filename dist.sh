@@ -28,4 +28,4 @@ git add -u
 git commit -m "v$VERSION"
 git pull
 git push
-cargo publish
+cargo publish --registry crates-io
