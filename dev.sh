@@ -15,4 +15,4 @@ exec watchexec \
   --project-origin . -w . \
   --exts rs,toml \
   -r \
-  -- ./run.sh $@
+  -- ./test.sh $@
