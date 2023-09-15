@@ -1,11 +1,11 @@
 [package]
 name = "xwarn"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2021"
 license = "BSL-1.0"
 homepage = "https://github.com/xxai-art/xwarn"
 repository = "https://github.com/xxai-art/xwarn"
-description = "用 https://wxpusher.zjiecode.com 发送微信报警"
+description = ""
 
 [dependencies]
 anyhow = "1.0.75"
