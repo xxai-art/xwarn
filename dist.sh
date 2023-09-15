@@ -18,14 +18,10 @@ sed -i -E "/\[package\]/,/description/ s~(description\s*=\s*\")[^\"]*~\1$DESCRIP
 if ! [ -x "$(command -v cargo-v)" ]; then
   cargo install cargo-v
 fi
-cargo v patch -y
-VERSION=$(grep "^version" Cargo.toml)
-
-# 替换版本号
-sed -i "s/^version = \"$VERSION\"/version = \"$NEW_VERSION\"/" Cargo.toml
-./clippy.sh
 git add -u
-git commit -m "$VERSION"
+git commit -m "."
+cargo v patch -y
+./clippy.sh
 git pull
 git push
 cargo publish --registry crates-io
