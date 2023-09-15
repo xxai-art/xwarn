@@ -1,0 +1,22 @@
+[package]
+name = "xwarn"
+version = "0.0.1"
+edition = "2021"
+license = "BSL-1.0"
+homepage = "https://github.com/xxai-art/xwarn"
+repository = "https://github.com/xxai-art/xwarn"
+description = ""
+
+[dependencies]
+
+[dev-dependencies]
+
+[profile.release]
+lto = true
+opt-level = 3
+incremental = true
+codegen-units = 1
+overflow-checks = false
+panic = 'abort'
+debug-assertions = false
+# strip = true
