@@ -5,7 +5,7 @@ edition = "2021"
 license = "BSL-1.0"
 homepage = "https://github.com/xxai-art/xwarn"
 repository = "https://github.com/xxai-art/xwarn"
-description = ""
+description = "用 wxpusher 发送微信报警"
 
 [dependencies]
 anyhow = "1.0.75"

@@ -1,4 +1,4 @@
-# xwarn
+# xwarn : 用 wxpusher 发送微信报警
 
 用 [wxpusher](https://wxpusher.zjiecode.com) 发送微信报警
 
